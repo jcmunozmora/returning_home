@@ -2,7 +2,7 @@
 ### Journal of Development Studies
 ### 
 
-This repository contains the replication codes and files for our article Returning Home After Civil War: Food security and nutrition among Burundian households published at Journal of Development Studies (2017).
+This repository contains the replication codes in STATA and dataset for our article Returning Home After Civil War: Food security and nutrition among Burundian households published at Journal of Development Studies (2017).
 
 ## Original DataSet - CWIQ Burundi (2006)
 
