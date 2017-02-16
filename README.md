@@ -1,6 +1,5 @@
-# Returning Home After Civil War: Food security and nutrition among Burundian households
-### Journal of Development Studies
-### 
+# Returning Home After Civil War: Food security and nutrition among Burundian households.
+## Philip Verwimp and Juan Carlos Munoz-Mora
 
 This repository contains the replication codes in STATA and dataset for our article Returning Home After Civil War: Food security and nutrition among Burundian households published at Journal of Development Studies (2017).
 
