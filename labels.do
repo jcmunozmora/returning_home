@@ -75,6 +75,8 @@ cap label var hh_duration_return "Number of years ago since return"
 cap label var d_displacement "Returned IDH (yes=1)"
 cap label var stad_hh_duration_displa_new "Duration of absence"
 cap label var stad_hh_duration_return_new "Years since Return"
+cap label var hh_duration_displa_new "Duration of absence"
+cap label var hh_duration_return_new "Years since Return"
 cap label var stad_hh_size "Household size"
 cap label var d_rural "Rural Household (yes=1)"
 

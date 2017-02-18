@@ -15,7 +15,7 @@
 
 
 *** Define working path where the data will be located.
-cd "/Users/juancarlosmunoz/Dropbox/Documents/PhD_Tesis_2016/Chap4/JDS_Final_Submission/githun_respository"
+cd "/path/where/data/is/located"
 
 *** Main source information: the Core Welfare Indicator Questionnaire –CWIQ– for Burundi (2006). From the original data set (7199 households), we left out households with missing observations in the variables of interest (displacement and expenditure).
 
@@ -139,33 +139,6 @@ include "labels.do"
 ***------------- Table 7.
 *** Average Treatment effect on the Treated (ATT), using different treatments
 **-----------------------------
-
-*** Matching program 
-capt prog drop matching
-	program matching
-	syntax varlist
- 	marksample touse
-
-	** Prepare for the matching
-	set seed 12345
-	tempvar sortorder
-	gen `sortorder' = runiform()
-	sort `sortorder'
-
-	** Main Effect
-	psmatch2  match_`i' , n(5) out( hh_consumption_daily_ae) ate pscore(probit_p_1)
-
-	teffects psmatch (`1') (`2' $Head_level i.strata, probit ), caliper(0.1) vce(robust)  nn(1) 
-	cap drop ATE_x
-	predict ATE_x, te
-	di r(mean)
-	qui psmatch2 `2' $Head_level i.strata, outcome(`1')  ate ties n(1)
-	cap drop delta
-	gen delta = `1' - _`1' if _treat==1 & _support==1
-	rbounds delta, gamma(1 (0.1) 2) alpha(.90)
-
-end
-
 
 * Randomly organized the data for the matching
 set seed 12345
