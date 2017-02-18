@@ -17,4 +17,4 @@ The CWIQ follows a two-stage sampling design: first, the main sampling units wer
 
 Dataset is in **Stata13** format. You need to install two extra packages to replicate our results: (i)  [psmatch2](https://ideas.repec.org/c/boc/bocode/s432001.html) for estimating the propensity score matching estimator; and, (ii) [estout](http://repec.org/bocode/e/estout/esttab.html) for exporting datasets.
 
-> Please don't hestitate to contact us for any extra question or comment about the main result of our paper (@jcmunozmora).
+> Please don't hestitate to contact us if you have any question/comment (philip.verwimp@ulb.ac.be and juancarlos.munoz@upf.edu).
