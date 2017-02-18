@@ -20,12 +20,6 @@ cd "/path/where/data/is/located"
 
 u "Verwimp-Munoz_2017.dta", clear
 
-*** Define working path where the data will be located.
-cd "/Users/juancarlosmunoz/Dropbox/Documents/PhD_Tesis_2016/Chap4/JDS_Final_Submission/githun_respository"
-
-*** Main source information: the Core Welfare Indicator Questionnaire –CWIQ– for Burundi (2006). From the original data set (7199 households), we left out households with missing observations in the variables of interest (displacement and expenditure).
-
-u "Verwimp-Munoz_2017.dta", clear
 
 ****------------------------****
 ****** Declare Sampling Design
